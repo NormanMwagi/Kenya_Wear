@@ -8,7 +8,7 @@ namespace Kenya_Wear.Controllers
         {
             return View();
         }
-        public IActionResult PopularProducts()
+        public IActionResult Shop()
         {
             return View();
         }
