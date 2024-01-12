@@ -1,0 +1,141 @@
+﻿
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@ViewData["Title"] Sign Up</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Flat Sign Up Form Responsive Widget Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- Meta tag Keywords -->
+	<!-- css files -->
+	<link href="~/Register/css/style.css" rel="stylesheet" type="text/css" media="all">
+	<link href="~/Register/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<!-- //css files -->
+	<!-- online-fonts -->
+	<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!--header-->
+	<div class="header-w3l">
+		<h1>Sign Up Form</h1>
+	</div>
+	<!--//header-->
+	<!--main-->
+	<div class="main-agileits">
+		<h2 class="sub-head">Sign Up</h2>
+		<div class="sub-main">
+			<form action="~/Registration/Register" method="post">
+				<input id="name" placeholder="Name" name="Name" class="name" type="text" required="">
+				<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span><br>
+				<input id="mobile" placeholder="Phone Number" name="Number" class="number" type="text" required="">
+				<span class="icon2"><i class="fa fa-phone" aria-hidden="true"></i></span><br>
+				<input id="email" placeholder="Email" name="mail" class="mail" type="text" required="">
+				<span class="icon3"><i class="fa fa-envelope" aria-hidden="true"></i></span><br>
+				<input id="password" placeholder="Password" name="Password" class="pass" type="password" required="">
+				<span class="icon4"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
+				<input id="confirmPassword" placeholder="Confirm Password" name="Password" class="pass" type="password" required="">
+				<span class="icon5"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
+
+                <label class="form-control-label" for="showPassword">Show Password</label>
+                <input id="showPassword" type="checkbox" onclick="togglePasswordVisibility()" />
+                <span class="icon6"><i aria-hidden="true"></i></span><br>
+                
+
+				<input type="submit" value="sign up">
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<!--//main-->
+	<!--footer-->
+	<div class="footer-w3">
+		<p>Copyright &copy; @DateTime.Now.Year Norman Mwagi. All rights reserved </p>
+	</div>
+	<!--//footer-->
+
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+    function togglePasswordVisibility() {
+        var passwordInput = document.getElementById('password');
+        var confirmPasswordInput = document.getElementById('confirmPassword');
+        var showPasswordCheckbox = document.getElementById('showPassword');
+
+        if (showPasswordCheckbox.checked) {
+            passwordInput.type = 'text';
+            confirmPasswordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+            confirmPasswordInput.type = 'password';
+        }
+    }
+
+
+    $('#save').click(function () {
+        var a = $(this).closest(".panel");
+
+        var recordid = document.getElementById('recordid').value;
+        var name = document.getElementById('name').value;
+        var mobile = document.getElementById('mobile').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value; // Added line
+
+        //check if passwords match
+        if (password !== confirmPassword) {
+            $.notify("Passwords do not match", {
+                globalPosition: "top center",
+                className: "error" // Stop execution if passwords do not match
+            });
+            return;
+        }
+
+        var role_id = 2;
+        var locked = 0;
+
+
+        var parameters = {
+            id: recordid,
+            mobile: mobile,
+            email: email,
+            name: name,
+            role_id: role_id,
+            locked: locked,
+            password: password
+        };
+
+        $.ajax({
+            url: " /Registration/Register",
+            type: "POST",
+            data: parameters,
+
+            success: function (data) {
+                if (data.success) {
+
+                    $("#Registration")[0].reset();
+                    $.notify(data.message, {
+                        globalPosition: "top center",
+                        className: "success"
+                    })
+
+                }
+            }
+
+
+        });
+    });
+    </script>

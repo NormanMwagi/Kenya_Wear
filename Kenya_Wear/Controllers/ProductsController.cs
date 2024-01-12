@@ -12,5 +12,9 @@ namespace Kenya_Wear.Controllers
         {
             return View();
         }
+        public IActionResult ShopSingle()
+        {
+            return View();
+        }
     }
 }
