@@ -22,18 +22,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- online-fonts -->
 	<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<link href='//fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
 	<!--header-->
-	<div class="header-w3l">
+	@* <div class="header-w3l">
 		<h1>Sign Up Form</h1>
-	</div>
+	</div> *@
 	<!--//header-->
 	<!--main-->
 	<div class="main-agileits">
 		<h2 class="sub-head">Sign Up</h2>
 		<div class="sub-main">
-			<form action="~/Registration/Register" method="post">
+            <form id="Registration">
+                <input id="recordid" type="hidden" name="recordid" />
 				<input id="name" placeholder="Name" name="Name" class="name" type="text" required="">
 				<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span><br>
 				<input id="mobile" placeholder="Phone Number" name="Number" class="number" type="text" required="">
@@ -42,15 +45,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<span class="icon3"><i class="fa fa-envelope" aria-hidden="true"></i></span><br>
 				<input id="password" placeholder="Password" name="Password" class="pass" type="password" required="">
 				<span class="icon4"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
-				<input id="confirmPassword" placeholder="Confirm Password" name="Password" class="pass" type="password" required="">
+                <input id="confirmPassword" placeholder="Confirm Password" name="ConfirmPassword" class="pass" type="password" required="">
 				<span class="icon5"><i class="fa fa-unlock" aria-hidden="true"></i></span><br>
 
                 <label class="form-control-label" for="showPassword">Show Password</label>
                 <input id="showPassword" type="checkbox" onclick="togglePasswordVisibility()" />
                 <span class="icon6"><i aria-hidden="true"></i></span><br>
-                
 
-				<input type="submit" value="sign up">
+
+                <input id="save" type="submit" value="sign up">
 			</form>
 		</div>
 		<div class="clear"></div>

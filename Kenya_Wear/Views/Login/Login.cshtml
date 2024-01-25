@@ -1,4 +1,5 @@
-﻿
+﻿@using Kenya_Wear.Models
+@model LoginModel
 @{
 	Layout = null;
 }
@@ -7,7 +8,7 @@
 <html lang="zxx">
 
 <head>
-    <title>@ViewData["Title"] Login Page</title>
+    <title>@ViewData["Title"] Log In Page</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="~/Login/css/style.css" type="text/css" media="all" />
     <!--//Style-CSS -->
     <link rel="stylesheet" href="~/Login/css/font-awesome.min.css" type="text/css" media="all">
+   
 
 </head>
 
@@ -28,21 +30,21 @@
             <div class="w3l-form-info">
                 <div class="w3_info">
                     <h1>Welcome Back</h1>
-                    <p class="sub-para">Kindly login</p>
+                    <p class="sub-para">Kindly log in</p>
                     <h2>Log In</h2>
-                    <form action="~/Login/Login" method="post">
+                    <form id="loginForm" asp-action="Login" asp-controller="Login" method="post">
                         <div class="input-group">
                             <span><i class="fa fa-envelop" aria-hidden="true"></i></span>
-                            <input type="email" placeholder="Email" required="">
+                            <input asp-for="email" placeholder="Email" required="">
                         </div>
                         <div class="input-group two-groop">
                             <span><i class="fa fa-key" aria-hidden="true"></i></span>
-                            <input type="Password" placeholder="Password" required="">
+                            <input asp-for="password" type="password" placeholder="Password" required="">
                         </div>
                         <div class="form-row bottom">
                             <div class="form-check">
-                                <input type="checkbox" id="remenber" name="remenber" value="remenber">
-                                <label for="remenber"> Remember me?</label>
+                                <input asp-for ="isRemember" type="checkbox" id="remenber" name="remenber" value="remenber">
+                                <label id="isRemember" for="remenber"> Remember me?</label>
                             </div>
                             <a href="#url" class="forgot">Forgot password?</a>
                         </div>
@@ -64,6 +66,42 @@
         <!-- footer -->
     </div>
 
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="~/assets/static/plugins/jquery/jquery-1.9.1.min.js"></script>
+    <script src="~/assets/static/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+    <script src="~/assets/static/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="~/assets/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="assets/crossbrowserjs/html5shiv.js"></script>
+        <script src="assets/crossbrowserjs/respond.min.js"></script>
+        <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+    <![endif]-->
+    <script src="~/assets/static/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/assets/static/plugins/jquery-cookie/jquery.cookie.js"></script>
+    <!-- ================== END BASE JS ================== -->
+    <script>
+        $(document).ready(function () {
+            //FormPlugins.init(); // Uncomment if needed
+        });
+
+        $(document).on('submit', 'form', function (e) {
+            if (this.checkValidity()) {
+                if (!e.isDefaultPrevented()) {
+                    BlockUI();
+                }
+            }
+        });
+
+        function BlockUI() {
+            $.blockUI({ message: '<h4> Please wait...</h4>' });
+        }
+
+        function UnblockUI() {
+            $.unblockUI();
+        }
+
+</script>
+    
 </body>
 
 </html>

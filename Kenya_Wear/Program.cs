@@ -1,3 +1,6 @@
+using Kenya_Wear.Helpers;
+using Kenya_Wear.Models;
+
 namespace Kenya_Wear
 {
     public class Program
@@ -9,7 +12,22 @@ namespace Kenya_Wear
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+
+            builder.Services.AddTransient<DBHandler>(d => new DBHandler(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddMvc(options =>
+            {
+                options.EnableEndpointRouting = false;
+            });
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(12);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            builder.Services.AddScoped<ILoggerManager, LoggerManager>();
             var app = builder.Build();
+           
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -19,6 +37,7 @@ namespace Kenya_Wear
                 app.UseHsts();
             }
 
+            app.UseSession();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
