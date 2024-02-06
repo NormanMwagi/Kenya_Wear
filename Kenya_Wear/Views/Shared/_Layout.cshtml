@@ -1,590 +1,1063 @@
 ﻿
+
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html>
 <head>
-    <title>@ViewData["Title"] - Kenya Wear</title>
-    <!-- Meta tag Keywords -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="Bootie Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script>
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
+	<title>@ViewData["Title"] - Kenya Wear</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Smart Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			   function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- //for-mobile-apps -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyJdP97eF7H55aiFfGgaiy4+K5PDop5L2Y" crossorigin="anonymous">
+	<link href="~/smart/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- pignose css -->
+	<link href="~/smart/css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
 
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    </script>
-    <!-- //Meta tag Keywords -->
-    <!-- Custom-Files -->
-    <link rel="stylesheet" href="~/wear/css/bootstrap.css">
-    <!-- Bootstrap-Core-CSS -->
-    <link rel="stylesheet" href="~/wear/css/style.css" type="text/css" media="all" />
-    <!-- Style-CSS -->
-    <!-- font-awesome-icons -->
-    <link href="~/wear/css/font-awesome.css" rel="stylesheet">
-    <!-- //font-awesome-icons -->
-    <!-- /Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
-    <!-- //Fonts -->
+
+	<!-- //pignose css -->
+	<link href="~/smart/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- js -->
+	<script type="text/javascript" src="~/smart/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="~/smartjs/bootstrap-3.1.1.min.js"></script>
+	<!-- //js -->
+	<!-- cart -->
+	<script src="~/smart/js/simpleCart.min.js"></script>
+	<script src="~/smart/js/jquery.easing.min.js"></script>
+	<!-- cart -->
+	<!-- for bootstrap working -->
+	<!-- //for bootstrap working -->
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
 
 </head>
-
 <body>
 
-    <!-- mian-content -->
-    <div class="main-banner" id="home">
-        <!-- header -->
-        <header class="header">
-            <div class="container-fluid px-lg-5">
-                <!-- nav -->
-                <nav class="py-4">
-                    <div id="logo">
-                        <h1> <a href="~/Home/Index"><span class="fa fa-bold" aria-hidden="true"></span>est Wear</a></h1>
-                    </div>
+	@RenderBody()
+	<!-- banner -->
+	<div class="ban-top">
+		<div class="container">
+			<div class="top_nav_left">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav menu__list">
+								<li class="active menu__item menu__item--current"><a class="menu__link" href="Home/Index">Home <span class="sr-only">(current)</span></a></li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">men's wear <span class="caret"></span></a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="row">
+											<div class="col-sm-6 multi-gd-img1 multi-gd-text ">
+												<a href="Gender/Men"><img src="~/smart/images/woo1.jpg" alt=" " /></a>
+											</div>
+											<div class="col-sm-3 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li><a href="Gender/Men">Clothing</a></li>
+													<li><a href="Gender/Men">Wallets</a></li>
+													<li><a href="Gender/Men">Footwear</a></li>
+													<li><a href="Gender/Men">Watches</a></li>
+													<li><a href="Gender/Men">Accessories</a></li>
+													<li><a href="Gender/Men">Bags</a></li>
+													<li><a href="Gender/Men">Caps & Hats</a></li>
+												</ul>
+											</div>
+											<div class="col-sm-3 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li><a href="Gender/Men">Jewellery</a></li>
+													<li><a href="Gender/Men">Sunglasses</a></li>
+													<li><a href="Gender/Men">Perfumes</a></li>
+													<li><a href="Gender/Men">Beauty</a></li>
+													<li><a href="Gender/Men">Shirts</a></li>
+													<li><a href="Gender/Men">Sunglasses</a></li>
+													<li><a href="Gender/Men">Swimwear</a></li>
+												</ul>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</ul>
+								</li>
+								<li class="dropdown menu__item">
+									<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">women's wear <span class="caret"></span></a>
+									<ul class="dropdown-menu multi-column columns-3">
+										<div class="row">
+											<div class="col-sm-3 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li><a href="Gender/Women">Clothing</a></li>
+													<li><a href="Gender/Women">Wallets</a></li>
+													<li><a href="Gender/Women">Footwear</a></li>
+													<li><a href="Gender/Women">Watches</a></li>
+													<li><a href="Gender/Women">Accessories</a></li>
+													<li><a href="Gender/Women">Bags</a></li>
+													<li><a href="Gender/Women">Caps & Hats</a></li>
+												</ul>
+											</div>
+											<div class="col-sm-3 multi-gd-img">
+												<ul class="multi-column-dropdown">
+													<li><a href="~/Gender/Women">Jewellery</a></li>
+													<li><a href="~/Gender/Women">Sunglasses</a></li>
+													<li><a href="~/Gender/Women">Perfumes</a></li>
+													<li><a href="~/Gender/Women">Beauty</a></li>
+													<li><a href="~/Gender/Women">Shirts</a></li>
+													<li><a href="~/Gender/Women">Sunglasses</a></li>
+													<li><a href="~/Gender/Women">Swimwear</a></li>
+												</ul>
+											</div>
+											<div class="col-sm-6 multi-gd-img multi-gd-text ">
+												<a href="~/Gender/Women"><img src="~/smart/images/woo.jpg" alt=" " /></a>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</ul>
+								</li>
+								<li class=" menu__item"><a class="menu__link" href="Products/Electronics">Electronics</a></li>
+								<li class=" menu__item"><a class="menu__link" href="Products/Codes">Short Codes</a></li>
+								<li class=" menu__item"><a class="menu__link" href="Products/Contact">contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="top_nav_right">
+				<div class="cart box_1">
+					<a href="Products/Cart">
+						<h3>
+							<div class="total">
+								<i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+							</div>
 
-                    <label for="drop" class="toggle">Menu</label>
-                    <input type="checkbox" id="drop" />
-                    <ul class="menu mt-2">
-                        <li class="active"><a href="~/Home/Index">Home</a></li>
-                        <li><a href="~/Home/About">About</a></li>
-                        <li><a href="~/Home/Blog">Blog</a></li>
-                        <li>
-                            <!-- First Tier Drop Down -->
-                            <label for="drop-2" class="toggle">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
-                            <a href="#">Drop Down <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                            <input type="checkbox" id="drop-2" />
-                            <ul>
-                                <li><a href="~/Home/Blog">Blog</a></li>
-                                <li><a href="~/Products/Shop">Shop Now</a></li>
-                                <li><a href="~/Products/ShopSingle">Single Page</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="~/Home/Contact">Contact</a></li>
-                        <li><a href="~/Login/Login">Log In</a></li>
-                    </ul>
-                </nav>
-                <!-- //nav -->
-            </div>
-            @RenderBody()
-        </header>
-        <!-- //header -->
-       
-    </div>
-    <!--//main-content-->
-    <!--/ab -->
-    <section class="about py-md-5 py-5">
-        <div class="container-fluid">
-            <div class="feature-grids row px-3">
-                <div class="col-lg-3 gd-bottom">
-                    <div class="bottom-gd row">
-                        <div class="icon-gd col-md-3 text-center"><span class="fa fa-truck" aria-hidden="true"></span></div>
-                        <div class="icon-gd-info col-md-9">
-                            <h3 class="mb-2">FREE SHIPPING</h3>
-                            <p>On all order over $2000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 gd-bottom">
-                    <div class="bottom-gd row bottom-gd2-active">
-                        <div class="icon-gd col-md-3 text-center"><span class="fa fa-bullhorn" aria-hidden="true"></span></div>
-                        <div class="icon-gd-info col-md-9">
-                            <h3 class="mb-2">FREE RETURN</h3>
-                            <p>On 1st exchange in 30 days</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 gd-bottom">
-                    <div class="bottom-gd row">
-                        <div class="icon-gd col-md-3 text-center"> <span class="fa fa-gift" aria-hidden="true"></span></div>
+						</h3>
+					</a>
+					<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 
-                        <div class="icon-gd-info col-md-9">
-                            <h3 class="mb-2">MEMBER DISCOUNT</h3>
-                            <p>Register & save up to $29%</p>
-                        </div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<!-- //banner-top -->
+	<!-- banner -->
+	<div class="banner-grid">
+		<div id="visual">
+			<div class="slide-visual">
+				<!-- Slide Image Area (1000 x 424) -->
+				<ul class="slide-group">
+					<li><img class="img-responsive" src="~/smart/images/ba1.jpg" alt="Dummy Image" /></li>
+					<li><img class="img-responsive" src="~/smart/images/ba2.jpg" alt="Dummy Image" /></li>
+					<li><img class="img-responsive" src="~/smart/images/ba3.jpg" alt="Dummy Image" /></li>
+				</ul>
 
-                    </div>
-                </div>
-                <div class="col-lg-3 gd-bottom">
-                    <div class="bottom-gd row">
-                        <div class="icon-gd col-md-3 text-center"> <span class="fa fa-usd" aria-hidden="true"></span></div>
-                        <div class="icon-gd-info col-md-9">
-                            <h3 class="mb-2">PREMIUM SUPPORT</h3>
-                            <p>Support 24 hours per day</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //ab -->
-    <!--/ab -->
-    <section class="about py-5">
-        <div class="container pb-lg-3">
-            <h3 class="tittle text-center">New Arrivals</h3>
-            <div class="row">
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s1.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Bella Toes </a>
-                            </h4>
+				<!-- Slide Description Image Area (316 x 328) -->
+				<div class="script-wrap">
+					<ul class="script-group">
+						<li><div class="inner-script"><img class="img-responsive" src="~/smart/images/baa1.jpg" alt="Dummy Image" /></div></li>
+						<li><div class="inner-script"><img class="img-responsive" src="~/smart/images/baa2.jpg" alt="Dummy Image" /></div></li>
+						<li><div class="inner-script"><img class="img-responsive" src="~/smart/images/baa3.jpg" alt="Dummy Image" /></div></li>
+					</ul>
+					<div class="slide-controller">
+						<a href="#" class="btn-prev"><img src="~/smart/images/btn_prev.png" alt="Prev Slide" /></a>
+						<a href="#" class="btn-play"><img src="~/smart/images/btn_play.png" alt="Start Slide" /></a>
+						<a href="#" class="btn-pause"><img src="~/smart/images/btn_pause.png" alt="Pause Slide" /></a>
+						<a href="#" class="btn-next"><img src="~/smart/images/btn_next.png" alt="Next Slide" /></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<script type="text/javascript" src="~/smart/js/pignose.layerslider.js"></script>
+		<script type="text/javascript">
+			//<![CDATA[
+			$(window).load(function () {
+				$('#visual').pignoseLayerSlider({
+					play: '.btn-play',
+					pause: '.btn-pause',
+					next: '.btn-next',
+					prev: '.btn-prev'
+				});
+			});
+			//]]>
+		</script>
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$675.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s2.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Chikku Loafers </a>
-                            </h4>
+	</div>
+	<!-- //banner -->
+	<!-- content -->
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$475.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s3.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">(SRV) Sneakers </a>
-                            </h4>
+	<div class="new_arrivals">
+		<div class="container">
+			<h3><span>new </span>arrivals</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+			<div class="new_grids">
+				<div class="col-md-4 new-gd-left">
+					<img src="~/smart/images/wed1.jpg" alt=" " />
+					<div class="wed-brand simpleCart_shelfItem">
+						<h4>Wedding Collections</h4>
+						<h5>Flat 50% Discount</h5>
+						<p><i>ksh 30,000</i> <span class="item_price">ksh 15,000</span><a class="item_add hvr-outline-out button2" href="#">add to cart </a></p>
+					</div>
+				</div>
+				<div class="col-md-4 new-gd-middle">
+					<div class="new-levis">
+						<div class="mid-img">
+							<img src="~/smart/images/levis1.png" alt=" " />
+						</div>
+						<div class="mid-text">
+							<h4>up to 40% <span>off</span></h4>
+							<a class="hvr-outline-out button2" href="product.html">Shop now </a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="new-levis">
+						<div class="mid-text">
+							<h4>up to 50% <span>off</span></h4>
+							<a class="hvr-outline-out button2" href="product.html">Shop now </a>
+						</div>
+						<div class="mid-img">
+							<img src="~/smart/images/dig.jpg" alt=" " />
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-md-4 new-gd-left">
+					<img src="~/smart/images/wed2.jpg" alt=" " />
+					<div class="wed-brandtwo simpleCart_shelfItem">
+						<h4>Spring / Summer</h4>
+						<p>Shop Men</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+	<!-- content-bottom -->
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$575.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men my-lg-4">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s4.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Shuberry Heels</a>
-                            </h4>
+	<div class="content-bottom">
+		<div class="col-md-7 content-lgrid">
+			<div class="col-sm-6 content-img-left text-center">
+				<div class="content-grid-effect slow-zoom vertical">
+					<div class="img-box"><img src="~/smart/images/p1.jpg" alt="image" class="img-responsive zoom-img"></div>
+					<div class="info-box">
+						<div class="info-content simpleCart_shelfItem">
+							<h4>Mobiles</h4>
+							<span class="separator"></span>
+							<p><span class="item_price">$500</span></p>
+							<span class="separator"></span>
+							<a class="item_add hvr-outline-out button2" href="#">add to cart </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 content-img-right">
+				<h3>Special Offers and 50%<span>Discount On</span> Mobiles</h3>
+			</div>
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$575.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men my-lg-4">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s5.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Red Bellies </a>
-                            </h4>
+			<div class="col-sm-6 content-img-right">
+				<h3>Buy 1 get 1  free on <span> Branded</span> Watches</h3>
+			</div>
+			<div class="col-sm-6 content-img-left text-center">
+				<div class="content-grid-effect slow-zoom vertical">
+					<div class="img-box"><img src="~/smart/images/p2.jpg" alt="image" class="img-responsive zoom-img"></div>
+					<div class="info-box">
+						<div class="info-content simpleCart_shelfItem">
+							<h4>Watches</h4>
+							<span class="separator"></span>
+							<p><span class="item_price">$250</span></p>
+							<span class="separator"></span>
+							<a class="item_add hvr-outline-out button2" href="#">add to cart </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-5 content-rgrid text-center">
+			<div class="content-grid-effect slow-zoom vertical">
+				<div class="img-box"><img src="~/smart/images/p4.jpg" alt="image" class="img-responsive zoom-img"></div>
+				<div class="info-box">
+					<div class="info-content simpleCart_shelfItem">
+						<h4>Shoes</h4>
+						<span class="separator"></span>
+						<p><span class="item_price">$150</span></p>
+						<span class="separator"></span>
+						<a class="item_add hvr-outline-out button2" href="#">add to cart </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- //content-bottom -->
+	<!-- product-nav -->
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$575.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men my-lg-4">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s6.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Catwalk Flats </a>
-                            </h4>
+	<div class="product-easy">
+		<div class="container">
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$575.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s7.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Running Shoes </a>
-                            </h4>
+			<script src="~/smart/js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$675.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s8.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Sukun Casuals </a>
-                            </h4>
+			</script>
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Latest Designs</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Special Offers</span></li>
+						<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Collections</span></li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a1.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                            <div class="product_price">
-                                <div class="grid-price ">
-                                    <span class="money ">$775.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 product-men">
-                    <div class="product-shoe-info shoe text-center">
-                        <div class="men-thumb-item">
-                            <img src="~/wear/images/s9.jpg" class="img-fluid" alt="">
-                            <span class="product-new-top">New</span>
-                        </div>
-                        <div class="item-info-product">
-                            <h4>
-                                <a href="~/Products/ShopSingle">Bank Sneakers</a>
-                            </h4>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Air Tshirt Black</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a8.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a8.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">1+1 Offer</span>
 
-                            <div class="product_price">
-                                <div class="grid-price">
-                                    <span class="money">$875.00</span>
-                                </div>
-                            </div>
-                            <ul class="stars">
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-half-o" aria-hidden="true"></span></a></li>
-                                <li><a href="#"><span class="fa fa-star-o" aria-hidden="true"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Next Blue Blazer</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$99.99</span>
+											<del>$109.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-        </div>
-    </section>
-    <!-- //ab -->
-    <!--/testimonials-->
-    <section class="testimonials py-5">
-        <div class="container">
-            <div class="test-info text-center">
-                <h3 class="my-md-2 my-3">Jenifer Burns</h3>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Air Tshirt Black </a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$119.99</span>
+											<del>$120.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a4.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a4.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                <ul class="list-unstyled w3layouts-icons clients">
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-star"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-star"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-star"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="fa fa-star-half-o"></span>
-                        </a>
-                    </li>
-                </ul>
-                <p><span class="fa fa-quote-left"></span> Lorem Ipsum has been the industry's standard since the 1500s. Praesent ullamcorper dui turpis.Nulla pellentesque mi non laoreet eleifend. Integer porttitor mollisar lorem, at molestie arcu pulvinar ut. <span class="fa fa-quote-right"></span></p>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Maroon Puma Tshirt</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$79.99</span>
+											<del>$120.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a5.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a5.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">Combo Pack</span>
 
-            </div>
-        </div>
-    </section>
-    <!--//testimonials-->
-    <!--/ab -->
-    <section class="about py-5">
-        <div class="container pb-lg-3">
-            <h3 class="tittle text-center">Popular Products</h3>
-            <div class="row">
-                <div class="col-md-6 latest-left">
-                    <div class="product-shoe-info shoe text-center">
-                        <img src="~/wear/images/img1.jpg" class="img-fluid" alt="">
-                        <div class="shop-now"><a href="~/Home/Shop" class="btn">Shop Now</a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 latest-right">
-                    <div class="row latest-grids">
-                        <div class="latest-grid1 product-men col-12">
-                            <div class="product-shoe-info shoe text-center">
-                                <div class="men-thumb-item">
-                                    <img src="~/wear/images/img2.jpg" class="img-fluid" alt="">
-                                    <div class="shop-now"><a href="~/Home/Shop" class="btn">Shop Now</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="latest-grid2 product-men col-12 mt-lg-4">
-                            <div class="product-shoe-info shoe text-center">
-                                <div class="men-thumb-item">
-                                    <img src="~/wear/images/img3.jpg" class="img-fluid" alt="">
-                                    <div class="shop-now"><a href="~/Home/Shop" class="btn">Shop Now</a></div>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Multicoloured TShirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$129.99</span>
+											<del>$150.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a6.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a6.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //ab -->
-    <!-- brands -->
-    <section class="brands py-5" id="brands">
-        <div class="container py-lg-0">
-            <div class="row text-center brand-items">
-                <div class="col-sm-2 col-3">
-                    <a href="#"><span class="fa fa-connectdevelop" aria-hidden="true"></span></a>
-                </div>
-                <div class="col-sm-2 col-3">
-                    <a href="#"><span class="fa fa-empire" aria-hidden="true"></span></a>
-                </div>
-                <div class="col-sm-2 col-3">
-                    <a href="#"><span class="fa fa-ioxhost" aria-hidden="true"></span></a>
-                </div>
-                <div class="col-sm-2 col-3">
-                    <a href="#"><span class="fa fa-first-order" aria-hidden="true"></span></a>
-                </div>
-                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
-                    <a href="#"><span class="fa fa-joomla" aria-hidden="true"></span></a>
-                </div>
-                <div class="col-sm-2 col-3 mt-sm-0 mt-4">
-                    <a href="#"><span class="fa fa-dropbox" aria-hidden="true"></span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- brands -->
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row footer-top">
-                <div class="col-lg-4 footer-grid_section_w3layouts">
-                    <h2 class="logo-2 mb-lg-4 mb-3">
-                        <a href="index.html"><span class="fa fa-bold" aria-hidden="true"></span>est Wear</a>
-                    </h2>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <h4 class="sub-con-fo ad-info my-4">Catch on Social</h4>
-                    <ul class="w3layouts_social_list list-unstyled">
-                        <li>
-                            <a href="#" class="w3pvt_facebook">
-                                <span class="fa fa-facebook-f"></span>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a href="#" class="w3pvt_twitter">
-                                <span class="fa fa-twitter"></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="w3pvt_dribble">
-                                <span class="fa fa-dribbble"></span>
-                            </a>
-                        </li>
-                        <li class="ml-2">
-                            <a href="#" class="w3pvt_google">
-                                <span class="fa fa-google-plus"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-8 footer-right">
-                    <div class="w3layouts-news-letter">
-                        <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Newsletter</h3>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Air Tshirt Black </a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$129.99</span>
+											<del>$150.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a7.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a7.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                        <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
-                        <form action="#" method="post" class="w3layouts-newsletter">
-                            <input type="email" name="Email" placeholder="Enter your email..." required="">
-                            <button class="btn1"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Dresses</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$129.99</span>
+											<del>$150.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/a2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/a2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                        </form>
-                    </div>
-                    <div class="row mt-lg-4 bottom-w3layouts-sec-nav mx-0">
-                        <div class="col-md-4 footer-grid_section_w3layouts">
-                            <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Information</h3>
-                            <ul class="list-unstyled w3layouts-icons">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="mt-3">
-                                    <a href="about.html">About Us</a>
-                                </li>
-                                <li class="mt-3">
-                                    <a href="#">Gallery</a>
-                                </li>
-                                <li class="mt-3">
-                                    <a href="#">Services</a>
-                                </li>
-                                <li class="mt-3">
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4 footer-grid_section_w3layouts">
-                            <!-- social icons -->
-                            <div class="agileinfo_social_icons">
-                                <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Customer Service</h3>
-                                <ul class="list-unstyled w3layouts-icons">
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Wedding Blazers</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$129.99</span>
+											<del>$150.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g1.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li class="mt-3">
-                                        <a href="#">Delivery & Returns</a>
-                                    </li>
-                                    <li class="mt-3">
-                                        <a href="#">Waranty</a>
-                                    </li>
-                                    <li class="mt-3">
-                                        <a href="#">Terms & Condition</a>
-                                    </li>
-                                    <li class="mt-3">
-                                        <a href="#">Privacy Plolicy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- social icons -->
-                        </div>
-                        <div class="col-md-4 footer-grid_section_w3layouts my-md-0 my-5">
-                            <h3 class="footer-title text-uppercase text-wh mb-lg-4 mb-3">Contact Info</h3>
-                            <div class="contact-info">
-                                <div class="footer-address-inf">
-                                    <h4 class="ad-info mb-2">Phone</h4>
-                                    <p>+254 792 037 392</p>
-                                </div>
-                                <div class="footer-address-inf my-4">
-                                    <h4 class="ad-info mb-2">Email </h4>
-                                    <p><a href="mailto:normanmwagi23@gmail.com">normanmwagi23@gmail.com</a></p>
-                                </div>
-                                <div class="footer-address-inf">
-                                    <h4 class="ad-info mb-2">Location</h4>
-                                    <p>Rose Avenue, Hurlingham</p>
-                                </div>
-                            </div>
-                        </div>
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Dresses</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem"> Shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
-                    </div>
-                    <div class="cpy-right text-left row">
-                        <p class="col-md-10">
-                            © 2024 Norman Mwagi. All rights reserved
-                        </p>
-                        <!-- move top icon -->
-                        <a href="#home" class="move-top text-right col-md-2"><span class="fa fa-long-arrow-up" aria-hidden="true"></span></a>
-                        <!-- //move top icon -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- //footer -->
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/mw2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/mw2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
 
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">T shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/w1.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/w1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Wedges</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/w2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/w2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Sandals</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/mw1.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/mw1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Casual Shoes</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/mw3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/mw3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Sport Shoes</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/ep2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/ep2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Watches</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/ep3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/ep3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Watches</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+						<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g1.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g1.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Dresses</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem"> Shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/g3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/g3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/mw2.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/mw2.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">T shirts</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/w4.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/w4.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Air Tshirt Black Domyos</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-men yes-marg">
+								<div class="men-pro-item simpleCart_shelfItem">
+									<div class="men-thumb-item">
+										<img src="~/smart/images/w3.png" alt="" class="pro-image-front">
+										<img src="~/smart/images/w3.png" alt="" class="pro-image-back">
+										<div class="men-cart-pro">
+											<div class="inner-men-cart-pro">
+												<a href="Products/SingleItem" class="link-product-add-cart">Quick View</a>
+											</div>
+										</div>
+										<span class="product-new-top">New</span>
+
+									</div>
+									<div class="item-info-product ">
+										<h4><a href="Products/SingleItem">Hand Bags</a></h4>
+										<div class="info-product-price">
+											<span class="item_price">$45.99</span>
+											<del>$69.71</del>
+										</div>
+										<a href="#" class="item_add single-item hvr-outline-out button2">Add to cart</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //product-nav -->
+
+	<div class="coupons">
+		<div class="container">
+			<div class="coupons-grids text-center">
+				<div class="col-md-3 coupons-gd">
+					<h3>Buy your product in a simple way</h3>
+				</div>
+				<div class="col-md-3 coupons-gd">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+					<h4>LOGIN TO YOUR ACCOUNT</h4>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor
+						sit amet, consectetur.
+					</p>
+				</div>
+				<div class="col-md-3 coupons-gd">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+					<h4>SELECT YOUR ITEM</h4>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor
+						sit amet, consectetur.
+					</p>
+				</div>
+				<div class="col-md-3 coupons-gd">
+					<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+					<h4>MAKE PAYMENT</h4>
+					<p>
+						Neque porro quisquam est, qui dolorem ipsum quia dolor
+						sit amet, consectetur.
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 footer-left">
+				<h2><a href="index.html"><img src="~/smart/images/logo3.jpg" alt=" " /></a></h2>
+				<p>
+					Neque porro quisquam est, qui dolorem ipsum quia dolor
+					sit amet, consectetur, adipisci velit, sed quia non
+					numquam eius modi tempora incidunt ut labore
+					et dolore magnam aliquam quaerat voluptatem.
+				</p>
+			</div>
+			<div class="col-md-9 footer-right">
+				<div class="col-sm-6 newsleft">
+					<h3>SIGN UP FOR NEWSLETTER !</h3>
+				</div>
+				<div class="col-sm-6 newsright">
+					<form>
+						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<div class="clearfix"></div>
+				<div class="sign-grds">
+					<div class="col-md-4 sign-gd">
+						<h4>Information</h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="~/Gender/Men">Men's Wear</a></li>
+							<li><a href="wo~/Gender/Men">Women's Wear</a></li>
+							<li><a href="electronics.html">Electronics</a></li>
+							<li><a href="codes.html">Short Codes</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-4 sign-gd-two">
+						<h4>Store Information</h4>
+						<ul>
+							<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Address : 1234k Avenue, 4th block, <span>Newyork City.</span></li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email : <a href="mailto:info@example.com">info@example.com</a></li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone : +1234 567 567</li>
+						</ul>
+					</div>
+					<div class="col-md-4 sign-gd flickr-post">
+						<h4>Flickr Posts</h4>
+						<ul>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b16.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b17.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b18.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="Products/SingleItem"><img src="~/smart/images/b15.jpg" alt=" " class="img-responsive" /></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<p class="copy-right">&copy @DateTime.Now.Year Smart Shop. All rights reserved | Design by Norman Mwagi
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- login -->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content modal-info">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body modal-spa">
+					<div class="login-grids">
+						<div class="login">
+							<div class="login-bottom">
+								<h3>Sign up for free</h3>
+								<form>
+									<div class="sign-up">
+										<h4>Email :</h4>
+										<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+									</div>
+									<div class="sign-up">
+										<h4>Password :</h4>
+										<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+
+									</div>
+									<div class="sign-up">
+										<h4>Re-type Password :</h4>
+										<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+
+									</div>
+									<div class="sign-up">
+										<input type="submit" value="REGISTER NOW">
+									</div>
+
+								</form>
+							</div>
+							<div class="login-right">
+								<h3>Sign in with your account</h3>
+								<form>
+									<div class="sign-in">
+										<h4>Email :</h4>
+										<input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+									</div>
+									<div class="sign-in">
+										<h4>Password :</h4>
+										<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+										<a href="#">Forgot password?</a>
+									</div>
+									<div class="single-bottom">
+										<input type="checkbox" id="brand" value="">
+										<label for="brand"><span></span>Remember Me.</label>
+									</div>
+									<div class="sign-in">
+										<input type="submit" value="SIGNIN">
+									</div>
+								</form>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //login -->
 </body>
-
 </html>
